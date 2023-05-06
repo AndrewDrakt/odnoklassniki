@@ -1,0 +1,24 @@
+﻿<Window x:Class="odnoklassniki.entermain"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:odnoklassniki"
+        mc:Ignorable="d"
+        Title="entermain" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="250"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Button x:Name="enter" Content="Войти в существующую" HorizontalAlignment="Center"  Grid.Row="1" Background="#FFFFAF00" VerticalAlignment="Center" FontSize="16" Click="enter_Click"/>
+        <Button Grid.Column="1" x:Name="create" Content="Создать новую комнату" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" Background="#FFFFAF00" FontSize="16" Click="create_Click"></Button>
+        <TextBlock x:Name="header" Grid.ColumnSpan="2" TextAlignment="Center" HorizontalAlignment="Stretch" TextWrapping="Wrap" Text="Одноклассники онлайн!" VerticalAlignment="Center" FontSize="24" FontFamily="Arial Black" Foreground="#FFFF9300"/>
+        <Frame Grid.Row="2" x:Name="frame" Grid.ColumnSpan="2" NavigationUIVisibility="Hidden" />
+    </Grid>
+</Window>
